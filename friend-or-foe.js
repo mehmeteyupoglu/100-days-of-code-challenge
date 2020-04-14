@@ -16,8 +16,8 @@ function friend(friends){
 
         if(friends[i].length === 4){
             friendsOfMine.push(friends[i]); 
-        } return friendsOfMine; 
-    }
+        } 
+    }return friendsOfMine; 
   }
 
 let input = ["Ryan", "Kieran", "Jason", "Yous"] //Output = ["Ryan", "Yous"]
