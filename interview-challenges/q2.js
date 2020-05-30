@@ -15,27 +15,34 @@
 // •	matches( 10, [1, 1, 3, 1, 2, 1, 3, 3, 3, 3] ) will return 4
 
 const funcPair = (size, arr) => {
-    let pairNum = 0, i, j; 
-    if (size <= 100 && size >= 0) {
-        for (i = 0; i < arr.length; i++) {
-            if ( arr[i] <= 100 && arr[i]>= 0 ){
-                for (j = i+1; j < arr.length; i++){
-                    if (arr[i] === arr[j]){
-                        pairNum += 1; 
-                        arr.splice(i, 1)
-                        arr.splice(j, 1)
-                    }
-                }
-            } else {
-                return "Invalid parameters"
-            } 
-        }
-        return pairNum
-    }  else {
-        return "Invalid parameters"
+
+    //The given array is sorted and it makes things easy to handle
+    let newArr = arr.sort(), i; score = 0
+
+    //The first constraint is controlled with this conditional 
+    if (size >= 100 && size <= 0) {
+        return "Invalid parameter!"
     }
-    
+
+    //The second constraint is controlled this binary operator (ES6)
+    arr.filter(item => {
+        return item >= 100 || item <= 0
+    }) && "Invalid parameter!"
+
+    //If it passes the constraints, the array is able to go through the loop.
+    for (i = 0; i<size; i){
+
+        //If the item equals to the next one, i increases by two to prevent the collusion
+        if (newArr[i] === newArr[i+1]){
+            score += 1
+            i += 2
+        } else {
+            i++
+        }
+    }
+    return score 
 }
 
-console.log(funcPair(9,  [10, 20, 20, 10, 10, 30, 50, 10, 20]))
+console.log(funcPair(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]))
+console.log(funcPair(10, [1, 1, 3, 1, 2, 1, 3, 3, 3, 3]))
 
