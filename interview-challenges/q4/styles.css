@@ -4,7 +4,7 @@ body {
 
 .body-container {
     margin: 250px 600px;
-    border: 1px solid rgb(187, 180, 180) ;  
+    /* border: 1px solid rgb(187, 180, 180) ;   */
     width: 215px;
     padding: 30px; 
     display: flex;
@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    box-shadow: 2px 2px 20px 2px rgb(255, 255, 255);
+    box-shadow: -2px 10px 40px 2px rgb(255, 255, 255);
     background-image: linear-gradient(to bottom left , rgb(255, 255, 254) , rgb(170, 170, 166));
 }
 
@@ -62,7 +62,7 @@ body {
     padding: 18px 35px; 
     border-radius: 100%;
     box-shadow: 1px 3px 5px rgb(153, 146, 146);
-    background-image: linear-gradient(to top, rgb(255, 255, 255) , rgb(211, 211, 205));
+    background-image: linear-gradient(to right top, rgb(255, 255, 255) , rgb(211, 211, 205));
 }
 
 #forward {
@@ -72,10 +72,10 @@ body {
     height: 85px;
     width: 30px;
     padding: 15px;
-    background-image: linear-gradient(to bottom, rgb(236, 236, 230) , rgb(189, 189, 180));
-    box-shadow: 1px 1px 2px rgb(102, 100, 100);
-    border-bottom-right-radius: 100% ;
-    border-top-right-radius: 100% ;
+    background-image: linear-gradient(to bottom, rgb(235, 235, 235) , rgb(187, 187, 187));
+    box-shadow: 1px 1px 2px rgb(131, 129, 129);
+    border-bottom-right-radius: 100%;
+    border-top-right-radius: 100%;
 }
 
 #settings {
@@ -84,7 +84,7 @@ body {
     align-items: center;
     height: 30px;
     width: 85px;
-    background-image: linear-gradient(to bottom left, rgb(209, 209, 198), rgb(189, 189, 180));
+    background-image: linear-gradient(to bottom left, rgb(230, 230, 230), rgb(189, 189, 189));
     box-shadow: 1px 1px 2px rgb(102, 100, 100);
     border-bottom-left-radius: 100% 200%;
     border-bottom-right-radius: 100% 200%;
