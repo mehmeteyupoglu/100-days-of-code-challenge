@@ -40,7 +40,7 @@ const funcPair = (size, arr) => {
             i++
         }
     }
-    return score 
+    return score    
 }
 
 console.log(funcPair(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]))

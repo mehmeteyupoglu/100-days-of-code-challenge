@@ -1,6 +1,5 @@
 body {
     background-color:  rgb(228, 228, 222) !important;
-    
 }
 
 .body-container {
@@ -13,8 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 100%;
-    box-shadow: 0 2px px  rgb(102, 100, 100);
-    background-image: linear-gradient(to bottom left    , rgb(236, 236, 230) , rgb(189, 189, 180));
+    box-shadow: 2px 2px 20px 2px rgb(255, 255, 255);
+    background-image: linear-gradient(to bottom left , rgb(255, 255, 254) , rgb(170, 170, 166));
 }
 
 .flex-container {
@@ -32,7 +31,7 @@ body {
 }
 
 .fas {
-    color: rgb(121, 119, 112) !important; 
+    color: rgb(100, 99, 96) !important; 
 }
 #volume {
     display: flex;
@@ -40,8 +39,10 @@ body {
     align-items: center;
     height: 30px;
     width: 85px;
-    background-color: rgb(228, 228, 222) !important; 
+    background-color: rgb(236, 236, 232) !important; 
     box-shadow: 1px 1px 2px rgb(102, 100, 100);
+    border-top-left-radius: 100% 200%;
+    border-top-right-radius: 100% 200%;
 }
 
 #backward {
@@ -50,15 +51,18 @@ body {
     align-items: center;
     height: 85px;
     width: 30px;
-    background-image: linear-gradient(to bottom, rgb(236, 236, 230) , rgb(189, 189, 180));
+    padding: 15px;
+    background-image: linear-gradient(to bottom, rgb(238, 238, 230) , rgb(199, 199, 197));
     box-shadow: 1px 1px 2px rgb(102, 100, 100);
+    border-bottom-left-radius: 100% ;
+    border-top-left-radius: 100% ;
 }
 
 #play {
     padding: 18px 35px; 
     border-radius: 100%;
     box-shadow: 1px 3px 5px rgb(153, 146, 146);
-    background-image: linear-gradient(to top, rgb(255, 255, 255) , rgb(184, 184, 179));
+    background-image: linear-gradient(to top, rgb(255, 255, 255) , rgb(211, 211, 205));
 }
 
 #forward {
@@ -67,8 +71,11 @@ body {
     align-items: center;
     height: 85px;
     width: 30px;
+    padding: 15px;
     background-image: linear-gradient(to bottom, rgb(236, 236, 230) , rgb(189, 189, 180));
     box-shadow: 1px 1px 2px rgb(102, 100, 100);
+    border-bottom-right-radius: 100% ;
+    border-top-right-radius: 100% ;
 }
 
 #settings {
@@ -79,5 +86,7 @@ body {
     width: 85px;
     background-image: linear-gradient(to bottom left, rgb(209, 209, 198), rgb(189, 189, 180));
     box-shadow: 1px 1px 2px rgb(102, 100, 100);
+    border-bottom-left-radius: 100% 200%;
+    border-bottom-right-radius: 100% 200%;
 }
 
