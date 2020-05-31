@@ -24,7 +24,7 @@ const funcPair = (size, arr) => {
         return "Invalid parameter!"
     }
 
-    //The second constraint is controlled this binary operator (ES6)
+    //The second constraint is controlled with this binary operator (ES6)
     arr.filter(item => {
         return item >= 100 || item <= 0
     }) && "Invalid parameter!"
