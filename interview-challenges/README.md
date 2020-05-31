@@ -10,4 +10,4 @@ node [filename]
 
 ### Question 4
 - Copy the path of html file in the q4 direction and paste it in the search bar in any browser. The expected result will be on the screen by doing so. 
-- Click the buttons to see the relevant and unique alerts for each button. 
+- Click the buttons to see the relevant and unique alerts for each of them. 
