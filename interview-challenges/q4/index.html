@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <div class="body-container">
+        <div class="flex-container">
+            <button 
+            type="button" 
+            class="btn btn-light" 
+            id="volume"
+            onclick="volumeAlert()"
+            >
+
+                <i class="fas fa-volume"></i>
+            </button>    
+        </div>
+        <div class="flex-container">
+            <button 
+            type="button" 
+            class="btn btn-light" 
+            id="backward"
+            onclick="previousAlert()"
+            >
+
+                <i class="fas fa-backward"></i>
+            </button>
+            <button 
+            type="button" 
+            class="btn btn-light" 
+            id="play"
+            onclick="playAlert()"
+            >
+
+                <i class="fas fa-play"></i>
+            </button>
+            <button 
+            type="button" 
+            class="btn btn-light" 
+            id="forward"
+            onclick="nextAlert()"
+            >
+
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+        <div class="flex-container">
+            <button 
+            type="button" 
+            class="btn btn-light" 
+            id="settings"
+            onclick="settingsAlert()"
+            >
+
+                <i class="fas fa-cog"></i>
+            </button>
+        </div>     
+    </div>
+
+    <script>
+        function playAlert() {
+          alert ("Playing!");
+        }
+
+        function nextAlert() {
+          alert ("Next song!");
+        }
+
+        function previousAlert() {
+          alert ("Previous song!");
+        }
+
+        function settingsAlert() {
+          alert ("Settings Clicked!");
+        }
+
+        function volumeAlert() {
+          alert ("Volume Clicked!");
+        }
+    </script>
+</body>
+</html>
