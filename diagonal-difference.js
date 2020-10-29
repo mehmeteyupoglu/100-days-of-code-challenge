@@ -14,9 +14,8 @@ function diagonalDifference(arr) {
     arr.forEach((item, index) => first += item[index] )
 
     let second = 0
-    arr.forEach((item, index) => second += item[2-index])
+    arr.forEach((item, index) => second += item[(item.length-1)-index])
 
     let result = first - second
-
     return Math.abs(result)
 }
