@@ -13,7 +13,3 @@ function pigIt(str) {
 
     return output.join(' ')
 }
-
-const pig = pigIt('Pig latin is cool');
-const hello = pigIt('Hello world !');
-console.log({pig, hello})
